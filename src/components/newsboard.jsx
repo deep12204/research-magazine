@@ -10,7 +10,7 @@ export default Newsboard;*/
 /*import { useState } from "react";
 import NewsItem from "./newsitem.jsx";
 
-// sample data to see the UI first
+
 const sampleArticles = [
   {
     title: "Intro to Transformers",
@@ -47,7 +47,7 @@ export default function NewsBoard() {
         Latest <span className="badge bg-danger">Research</span>
       </h2>
 
-      {/* 3-column responsive grid *//*}
+      
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
         {articles.map((a, i) => (
           <NewsItem key={i} {...a} />
