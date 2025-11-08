@@ -107,7 +107,7 @@ export default function NewsBoard() {
         Latest <span className="badge bg-danger">Research</span>
       </h2>
 
-      {/* Search form */}
+      
       <form
         className="row g-2 align-items-center mb-3"
         onSubmit={(e) => {
@@ -131,7 +131,7 @@ export default function NewsBoard() {
         {error && <div className="text-danger small mt-1">{error}</div>}
       </form>
 
-      {/* Cards grid */}
+     
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
         {articles.map((a, i) => (
           <NewsItem key={i} {...a} />
@@ -141,7 +141,7 @@ export default function NewsBoard() {
   );
 }
 
-/* --- Atom XML to JS --- */
+
 function parseArxiv(xmlText) {
   const doc = new window.DOMParser().parseFromString(xmlText, "text/xml");
   const entries = [...doc.getElementsByTagName("entry")].map((e) => {
